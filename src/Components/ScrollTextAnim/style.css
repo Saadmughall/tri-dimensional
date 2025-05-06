@@ -1,0 +1,10 @@
+.scroll-text .char {
+  display: inline-block;
+  animation: scroll-text 10s linear infinite;
+  font-family: 'RM-Bold';
+  font-size: 0.9vw;
+  color: #FFF8F0;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-50px);
+}

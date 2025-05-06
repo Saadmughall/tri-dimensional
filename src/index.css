@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'PFD-Regular';
+    src: url('./assets/PFD-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PFD-Bold';
+    src: url('./assets/PFD-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PFD-Medium';
+    src: url('./assets/PFD-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PFD-SemiBold';
+    src: url('./assets/PFD-SemiBold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'RM-Regular';
+    src: url('./assets/RM-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'RM-Bold';
+    src: url('./assets/RM-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'RM-Medium';
+    src: url('./assets/RM-Medium.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'RM-SemiBold';
+    src: url('./assets/RM-SemiBold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'RM-Light';
+    src: url('./assets/RM-Light.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE and Edge */
+    overflow-y: hidden;          
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;               /* Chrome, Safari and Opera */
+  }
+  .char {
+    display: inline-block;
+    transition: transform 0.3s;
+  }
