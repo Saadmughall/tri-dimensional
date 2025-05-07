@@ -2,9 +2,8 @@
   display: inline-block;
   animation: scroll-text 10s linear infinite;
   font-family: 'RM-Bold';
-  font-size: 0.9vw;
+  font-size: clamp(0.8rem, 0.9vw, 1.5rem); /* Responsive font size */
   color: #FFF8F0;
-  display: inline-block;
   opacity: 0;
   transform: translateY(-50px);
 }

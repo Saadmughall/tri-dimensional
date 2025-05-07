@@ -11,28 +11,26 @@ const NavbarLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div id='navbar-main'>
-      <nav className='navbar'>
-        <div className='navbar-logo'>
-          <img src={logo} alt='Logo' />
+    <div id="navbar-main">
+      <nav className="navbar">
+        <div className="navbar-logo">
+          <img src={logo} alt="Logo" />
         </div>
 
-        <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
+        <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
           {NavbarLinks.map((item, index) => (
-            <li key={index} className='navbar-link'>
+            <li key={index} className="navbar-link">
               <a href={item.link} onClick={() => setIsOpen(false)}>
                 <AnimatedText text={item.name} />
               </a>
             </li>
           ))}
-        </div>
+        </ul>
 
-        {/* Hamburger Menu Icon */}
-        <div className='hamburger' onClick={toggleMenu}>
+        <div className="hamburger" onClick={toggleMenu}>
           <span className={`bar ${isOpen ? 'open' : ''}`}></span>
           <span className={`bar ${isOpen ? 'open' : ''}`}></span>
           <span className={`bar ${isOpen ? 'open' : ''}`}></span>

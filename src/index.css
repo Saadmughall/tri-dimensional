@@ -40,16 +40,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    scrollbar-width: none;       /* Firefox */
-    -ms-overflow-style: none;    /* IE and Edge */
-    overflow-y: hidden;          
-  }
-  
-  body::-webkit-scrollbar {
-    display: none;               /* Chrome, Safari and Opera */
-  }
-  .char {
-    display: inline-block;
-    transition: transform 0.3s;
-  }
+#root{
+    overflow: hidden;
+}
